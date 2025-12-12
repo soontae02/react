@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${pageName}]]</title>
+
+    <link rel="icon" th:href="@{/img/favicon.ico}" />
+
+</head>
+<body>
+
+<h3>리액트 부착하기</h3>
+<div id="root"></div>
+
+<script th:src="@{'/bundle/' + ${pageName} + '.bundle.js'}"></script>
+
+</body>
+</html>
